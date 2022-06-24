@@ -2,16 +2,20 @@ package binary;
 
 public class TreeNode {
 
-    Integer value;
+    Integer val;
 
     TreeNode left;
 
     TreeNode right;
 
-    public TreeNode(TreeNode left, TreeNode right, Integer value) {
+    public TreeNode(Integer val) {
+        this.val = val;
+    }
+
+    public TreeNode(TreeNode left, TreeNode right, Integer val) {
         this.left = left;
         this.right = right;
-        this.value = value;
+        this.val = val;
     }
 
     public static TreeNode initTree() {
@@ -29,12 +33,12 @@ public class TreeNode {
         return five;
     }
 
-    public Integer getValue() {
-        return value;
+    public Integer getVal() {
+        return val;
     }
 
-    public void setValue(Integer value) {
-        this.value = value;
+    public void setVal(Integer val) {
+        this.val = val;
     }
 
     public TreeNode getLeft() {
